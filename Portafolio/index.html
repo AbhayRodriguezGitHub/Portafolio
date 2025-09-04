@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio | Abhay Rodriguez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="main.js"></script>
+</head>
+<body>
+<header class="hero" id="top">
+  <div class="barra-nav">
+    <img src="./res/BARRA.png" alt="Barra de navegación">
+    <nav class="menu">
+      <a href="#top" class="active">Portafolio</a>
+      <a href="#about">Sobre Mi</a>
+      <a href="#portfolio">Proyectos</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </div>
+
+  <figure class="avatar">
+    <img src="./res/ABHAY.png" alt="Abhay Rodriguez" />
+  </figure>
+
+  <h1 class="hero__name">ABHAY RODRIGUEZ</h1>
+  <h2 class="hero__subtitle" id="subtitle"></h2>
+</header>
+
+<img class="separator" src="./res/SEPARADOR2.png" alt="Separador" />
+
+<section id="about" class="section">
+  <div class="about-header">
+    <h2 class="section__title">Sobre mí</h2>
+
+    <!-- Flecha para alternar (inicialmente a la derecha) -->
+    <button class="about-toggle" type="button" aria-label="Ver curriculum">
+      <img src="./res/FLECHA.png" alt="Mostrar curriculum">
+    </button>
+  </div>
+
+  <div class="about-stage">
+    <!-- Panel de TEXTO -->
+    <div class="about-panel about-text" aria-hidden="false">
+      <p class="section__text">
+        Soy estudiante de la Escuela Técnica N.° 35 “Ingeniero Eduardo Latzina”, donde descubrí y desarrollé mi interés por la programación. 
+        Me caracterizo por una actitud proactiva y una constante disposición al aprendizaje.
+      </p>
+      <p class="section__text">
+        En el ámbito académico y laboral, priorizo el orden y la eficiencia en la ejecución de tareas, asegurando el cumplimiento de los objetivos establecidos. 
+        Cuento con habilidades de liderazgo que me permiten coordinar equipos de trabajo, motivar a mis compañeros y garantizar resultados de calidad.
+      </p>
+    </div>
+
+    <!-- Panel de CURRÍCULUM -->
+    <div class="about-panel about-cv" aria-hidden="true">
+      <a class="cv-card" href="./res/CURRICULUM.pdf" target="_blank" rel="noopener">
+        <img src="./res/CURRI.png" alt="Vista previa del Curriculum de Abhay">
+      </a>
+    </div>
+  </div>
+</section>
+
+<img class="separator" src="./res/SEPARADOR4.png" alt="Separador" />
+
+<section id="portfolio" class="section">
+  <h2 class="section__title">Proyectos</h2>
+
+  <div class="projects">
+    <a class="project-card red" href="#">
+      <div class="bg"><img src="./res/ETI.png" alt="ETI CICLOMANIA"></div>
+      <h3>ETI CICLOMANIA</h3>
+    </a>
+
+    <a class="project-card brown" href="#">
+      <div class="bg"><img src="./res/PICADOH.png" alt="PI-CA-DOH!"></div>
+      <h3>PI-CA-DOH!</h3>
+    </a>
+
+    <a class="project-card blue" href="#">
+      <div class="bg"><img src="./res/TECNICA.png" alt="PAGINA DEL COLEGIO"></div>
+      <h3>PAGINA DEL COLEGIO</h3>
+    </a>
+  </div>
+</section>
+
+<img class="separator" src="./res/SEPARADOR3.png" alt="Separador" />
+
+<section id="contact" class="section">
+  <h2 class="section__title">Contacto</h2>
+
+  <div class="contact-row">
+    <a class="contact-item linkable" href="https://github.com/AbhayRodriguezGitHub" target="_blank" rel="noopener">
+      <img src="./res/GIT.png" alt="GitHub"><span>GitHub</span>
+    </a>
+    <a class="contact-item linkable" href="https://ar.linkedin.com/" target="_blank" rel="noopener">
+      <img src="./res/LINK.png" alt="LinkedIn"><span>LinkedIn</span>
+    </a>
+    <div class="contact-item readonly">
+      <img src="./res/GMAIL.png" alt="Gmail"><span>Abhayrodriguezcara@gmail.com</span>
+    </div>
+    <div class="contact-item readonly">
+      <img src="./res/TELEFONO.png" alt="Teléfono"><span>+54 9 11 5743 8705</span>
+    </div>
+  </div>
+
+  <form class="contact-form" action="https://formsubmit.co/abhayrodriguezcara@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="Nuevo mensaje desde el Portafolio">
+    <div class="form-grid">
+      <input class="input" type="text" name="name" placeholder="Nombre completo" required>
+      <input class="input" type="email" name="email" placeholder="Correo electrónico" required>
+      <input class="input" type="text" name="phone" placeholder="Número de teléfono">
+      <input class="input" type="text" name="subject" placeholder="Asunto">
+      <textarea class="textarea" name="message" placeholder="Tu mensaje" required></textarea>
+    </div>
+    <button class="btn-send" type="submit">Enviar mensaje</button>
+  </form>
+</section>
+
+<img class="separator" src="./res/SEPARADOR1.png" alt="Separador" />
+
+<footer class="footer">
+  <div class="footer__inner">© 2025 Abhay Rodriguez</div>
+</footer>
+</body>
+</html>
