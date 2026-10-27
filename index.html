@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f1220">
+
+  <title>Portafolio | Abhay Rodriguez</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./main.js"></script>
+</head>
+
+<body>
+
+  <!-- ==================== INICIO ==================== -->
+  <header class="hero" id="top">
+
+    <div class="barra-nav">
+      <img src="./res/BARRA.png" alt="Barra de navegación">
+
+      <nav class="menu" aria-label="Navegación principal">
+        <a href="#top" class="active">Portafolio</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#portfolio">Proyectos</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </div>
+
+    <figure class="avatar">
+      <img src="./res/ABHAY.png" alt="Abhay Rodriguez">
+    </figure>
+
+    <h1 class="hero__name">ABHAY RODRIGUEZ</h1>
+    <h2 class="hero__subtitle" id="subtitle"></h2>
+
+  </header>
+
+  <img
+    class="separator"
+    src="./res/SEPARADOR2.png"
+    alt=""
+  >
+
+  <!-- ==================== SOBRE MÍ ==================== -->
+  <section id="about" class="section">
+
+    <div class="about-header">
+      <h2 class="section__title">¡Hola! Soy Abhay Rodriguez Cara</h2>
+
+      <button
+        class="about-toggle"
+        type="button"
+        aria-label="Ver currículum"
+        aria-expanded="false"
+      >
+        <img src="./res/FLECHA.png" alt="">
+      </button>
+    </div>
+
+    <!-- Ambos paneles deben permanecer dentro de este contenedor -->
+    <div class="about-stage">
+
+      <!-- Panel 1: presentación -->
+      <div class="about-panel about-text" aria-hidden="false">
+
+        <p class="section__text">
+          Soy técnico en Informática, egresado de la Escuela Técnica
+          N.º 35 «Ingeniero Eduardo Latzina», donde desarrollé mi interés
+          por la programación y la tecnología.
+        </p>
+
+        <p class="section__text">
+          Cuento con formación en mantenimiento e instalación de sistemas
+          informáticos y experiencia en proyectos de desarrollo, como la
+          creación de videojuegos en Java y mi participación en el
+          desarrollo de una página web institucional.
+        </p>
+
+        <p class="section__text">
+          Actualmente, continúo ampliando mis conocimientos en ciberseguridad
+          y marketing digital, con el objetivo de seguir creciendo
+          profesionalmente y afrontar nuevos desafíos en el ámbito tecnológico.
+        </p>
+
+        <p class="section__text">
+          Me caracterizo por ser una persona organizada, responsable y
+          comprometida con el aprendizaje continuo. Me interesa resolver
+          problemas, explorar nuevas tecnologías y aplicar mis conocimientos
+          en proyectos que me permitan seguir desarrollándome profesionalmente.
+        </p>
+
+      </div>
+
+      <!-- Panel 2: miniatura del currículum -->
+      <div class="about-panel about-cv" aria-hidden="true">
+
+        <a
+          class="cv-card"
+          href="./res/CURRICULUM.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Abrir currículum completo en PDF"
+          tabindex="-1"
+        >
+          <img
+            src="./res/CURRI.png"
+            alt="Vista previa del currículum de Abhay Rodriguez"
+          >
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <img
+    class="separator"
+    src="./res/SEPARADOR4.png"
+    alt=""
+  >
+
+  <!-- ==================== PROYECTOS ==================== -->
+  <section id="portfolio" class="section">
+
+    <h2 class="section__title">Proyectos</h2>
+
+    <div class="projects">
+
+      <!-- Proyecto 1: PI-CA-DOH -->
+      <a
+        class="project-card brown"
+        href="https://github.com/AbhayRodriguezGitHub/proyecto-final-tp-PiCaDoh-"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="bg">
+          <img src="./res/PICADOH.png" alt="">
+        </div>
+
+        <h3>PI-CA-DOH!</h3>
+      </a>
+
+      <!-- Proyecto 2: página institucional -->
+      <a
+        class="project-card blue"
+        href="https://www.tecnica35.com.ar/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="bg">
+          <img src="./res/TECNICA.png" alt="">
+        </div>
+
+        <h3>PÁGINA INSTITUCIONAL</h3>
+      </a>
+
+      <!-- Proyecto 3: ETI CICLOMANIA -->
+      <a
+        class="project-card red"
+        href="https://drive.google.com/file/d/1NzxTv6vt_gyyZiXaNCI9AnCTPZm0C0UP/view"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="bg">
+          <img src="./res/ETI.png" alt="">
+        </div>
+
+        <h3>ETI CICLOMANIA</h3>
+      </a>
+
+    </div>
+  </section>
+
+  <img
+    class="separator"
+    src="./res/SEPARADOR3.png"
+    alt=""
+  >
+
+  <!-- ==================== CONTACTO ==================== -->
+  <section id="contact" class="section">
+
+    <h2 class="section__title">Contacto</h2>
+
+    <div class="contact-row">
+
+      <a
+        class="contact-item linkable"
+        href="https://github.com/AbhayRodriguezGitHub"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="./res/GIT.png" alt="">
+        <span>GitHub</span>
+      </a>
+
+      <a
+        class="contact-item linkable"
+        href="https://www.linkedin.com/in/abhay-rodriguez-832738271/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="./res/LINK.png" alt="">
+        <span>LinkedIn</span>
+      </a>
+
+      <a
+        class="contact-item linkable"
+        href="mailto:abhayrodriguezcara@gmail.com"
+      >
+        <img src="./res/GMAIL.png" alt="">
+        <span>Email</span>
+      </a>
+
+      <a
+        class="contact-item linkable"
+        href="tel:+5491157438705"
+      >
+        <img src="./res/TELEFONO.png" alt="">
+        <span>Teléfono</span>
+      </a>
+
+    </div>
+  </section>
+
+  <img
+    class="separator"
+    src="./res/SEPARADOR1.png"
+    alt=""
+  >
+
+  <!-- ==================== PIE DE PÁGINA ==================== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      © 2026 Abhay Rodriguez
+    </div>
+  </footer>
+
+</body>
+</html>
